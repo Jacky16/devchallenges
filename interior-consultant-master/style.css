@@ -1,0 +1,222 @@
+:root {
+  --main-bg-color: #181719;
+  --main-padding: 16px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+/*Navigations */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-right: 48px;
+  padding-left: 32px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.navigation-item {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px;
+}
+.navigation-item:active,
+.navigation-item:hover {
+  border-bottom: 2px solid #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-menu {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+}
+.menu-responsive {
+  display: none;
+}
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 200;
+  border: 1px solid white;
+  text-transform: uppercase;
+  padding: 8px 32px 8px 32px;
+  font-family: "Chimson Pro", "serif";
+}
+.menu-responsive.show {
+  transform: translateX(0);
+}
+/*Content */
+section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section img {
+  width: 600px;
+  border-radius: 5px;
+}
+.first-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.first-container h2 {
+  font-size: 40px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+.first-container p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.btn-read-more {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+}
+.container-user {
+  padding: var(--main-padding);
+  width: 300px;
+  position: relative;
+  bottom: 100px;
+  left: 200px;
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+}
+.container-photo {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.container-photo img {
+  display: block;
+  width: 50px;
+  border-radius: 100%;
+}
+.container-photo h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.container-photo small {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #828282;
+}
+.container-description {
+  width: 200px;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.btn-read-more {
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  transition: 0.25s ease-in-out;
+}
+.btn-read-more:hover {
+  background-color: #828282;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: var(--main-padding);
+}
+footer p,
+footer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(169, 169, 169, 1);
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    font-size: 18px;
+  }
+  header {
+    padding: 8px;
+  }
+  .navigation {
+    display: none;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .menu-responsive {
+    display: block;
+    position: fixed;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(+100%);
+    transition: 0.25s ease-in-out;
+    z-index: 1;
+    background-color: var(--main-bg-color);
+  }
+  .menu-responsive nav {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+  .btn-close {
+    position: relative;
+    cursor: pointer;
+    padding-top: 16px;
+    left: calc(100% - 48px);
+    display: inline-flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+  }
+  section img {
+    width: 350px;
+  }
+  .container-user {
+    left: 40px;
+  }
+  .first-container {
+    display: flex;
+    width: 100%;
+  }
+}
