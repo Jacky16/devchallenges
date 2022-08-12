@@ -12,11 +12,11 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/Jacky16/devchallenges/tree/main/interior-consultant-master">
+    <a href="https://github.com/Jacky16/devchallenges/tree/main/recipe-page-master">
       Solution
     </a>
     <span> | </span>
-    <a href="hhttps://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
+    <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
       Challenge
     </a>
   </h3>
@@ -39,4 +39,4 @@ This site i've been built with Vanilla HTML/CSS/JS
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/paths/responsive-web-developer) challenge. The [challenge](https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht) was to build an application to complete the given user stories.
